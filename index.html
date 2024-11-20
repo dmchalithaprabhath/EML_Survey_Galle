@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70725aadc6d8b70d5357a11db2f9d87d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_70725aadc6d8b70d5357a11db2f9d87d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70725aadc6d8b70d5357a11db2f9d87d = L.map(
+                "map_70725aadc6d8b70d5357a11db2f9d87d",
+                {
+                    center: [6.0367, 80.217],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79ca0dea75e315820c10a73abad9d58b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_79ca0dea75e315820c10a73abad9d58b.addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+            var tile_layer_7030293424c0f758939c649c3eef067c = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7030293424c0f758939c649c3eef067c.addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+            var marker_4d58b88cab6b18d8f462e1e3d1ddbeab = L.marker(
+                [6.082057647000056, 80.20359614300008],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_04382951cd09c89f65549a2775f9637c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea3eace5a82877fec815c1007528a5c6 = $(`<div id="html_ea3eace5a82877fec815c1007528a5c6" style="width: 100.0%; height: 100.0%;">     <b>1. Sevitha Dairy Products</b><br>     <a href="https://www.google.com/maps?q=6.082057647000056,80.20359614300008" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_04382951cd09c89f65549a2775f9637c.setContent(html_ea3eace5a82877fec815c1007528a5c6);
+            
+        
+
+        marker_4d58b88cab6b18d8f462e1e3d1ddbeab.bindPopup(popup_04382951cd09c89f65549a2775f9637c)
+        ;
+
+        
+    
+    
+            marker_4d58b88cab6b18d8f462e1e3d1ddbeab.bindTooltip(
+                `<div>
+                     1. Sevitha Dairy Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bf0fecdca89e33cd6409f86e8e1e47d = L.marker(
+                [6.1801649560000556, 80.13647225400007],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_5194d409d88401d8d271c4d6629deca8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26f389902b5a382de362fbb6e1bdf92b = $(`<div id="html_26f389902b5a382de362fbb6e1bdf92b" style="width: 100.0%; height: 100.0%;">     <b>2. Suwashakthi Goat Milk Products</b><br>     <a href="https://www.google.com/maps?q=6.1801649560000556,80.13647225400007" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_5194d409d88401d8d271c4d6629deca8.setContent(html_26f389902b5a382de362fbb6e1bdf92b);
+            
+        
+
+        marker_1bf0fecdca89e33cd6409f86e8e1e47d.bindPopup(popup_5194d409d88401d8d271c4d6629deca8)
+        ;
+
+        
+    
+    
+            marker_1bf0fecdca89e33cd6409f86e8e1e47d.bindTooltip(
+                `<div>
+                     2. Suwashakthi Goat Milk Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e3fabf281ab2abce8138d60f448b4ca = L.marker(
+                [6.051244147000034, 80.24184266000003],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_7f44a0c004e2b824977ebc1d0259d1fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20f09134dda547145630c8b0cde4bb6e = $(`<div id="html_20f09134dda547145630c8b0cde4bb6e" style="width: 100.0%; height: 100.0%;">     <b>3. Koralage Seetha</b><br>     <a href="https://www.google.com/maps?q=6.051244147000034,80.24184266000003" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_7f44a0c004e2b824977ebc1d0259d1fc.setContent(html_20f09134dda547145630c8b0cde4bb6e);
+            
+        
+
+        marker_0e3fabf281ab2abce8138d60f448b4ca.bindPopup(popup_7f44a0c004e2b824977ebc1d0259d1fc)
+        ;
+
+        
+    
+    
+            marker_0e3fabf281ab2abce8138d60f448b4ca.bindTooltip(
+                `<div>
+                     3. Koralage Seetha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a26ba0273f0b73ef935ae2555197c179 = L.marker(
+                [6.201648566000074, 80.08463462600008],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_cde4935c854b96789af37bbf30d45c33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_053e560b92185e96febe777e678d1715 = $(`<div id="html_053e560b92185e96febe777e678d1715" style="width: 100.0%; height: 100.0%;">     <b>4. W.K. Chandima</b><br>     <a href="https://www.google.com/maps?q=6.201648566000074,80.08463462600008" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_cde4935c854b96789af37bbf30d45c33.setContent(html_053e560b92185e96febe777e678d1715);
+            
+        
+
+        marker_a26ba0273f0b73ef935ae2555197c179.bindPopup(popup_cde4935c854b96789af37bbf30d45c33)
+        ;
+
+        
+    
+    
+            marker_a26ba0273f0b73ef935ae2555197c179.bindTooltip(
+                `<div>
+                     4. W.K. Chandima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab48e92472eae87a1e3fc83f34ce51fe = L.marker(
+                [6.1678524820000575, 80.12085944900008],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_75fc7561f9c3b80bd727afd5552bb1a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6cf6adca9132b4eaacbeaa4ad6cbd247 = $(`<div id="html_6cf6adca9132b4eaacbeaa4ad6cbd247" style="width: 100.0%; height: 100.0%;">     <b>5. W.K. Neel Ranaweera</b><br>     <a href="https://www.google.com/maps?q=6.1678524820000575,80.12085944900008" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_75fc7561f9c3b80bd727afd5552bb1a1.setContent(html_6cf6adca9132b4eaacbeaa4ad6cbd247);
+            
+        
+
+        marker_ab48e92472eae87a1e3fc83f34ce51fe.bindPopup(popup_75fc7561f9c3b80bd727afd5552bb1a1)
+        ;
+
+        
+    
+    
+            marker_ab48e92472eae87a1e3fc83f34ce51fe.bindTooltip(
+                `<div>
+                     5. W.K. Neel Ranaweera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb6c71617b48a58d96b52de38b23c3b7 = L.marker(
+                [6.193505498000036, 80.20981712200006],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_b3751ff033569de7219c4bb37decb5f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1606861c46dbcc041af7e1f96a8aa5f = $(`<div id="html_e1606861c46dbcc041af7e1f96a8aa5f" style="width: 100.0%; height: 100.0%;">     <b>6. Mapalagama Manage Nishantha</b><br>     <a href="https://www.google.com/maps?q=6.193505498000036,80.20981712200006" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_b3751ff033569de7219c4bb37decb5f1.setContent(html_e1606861c46dbcc041af7e1f96a8aa5f);
+            
+        
+
+        marker_fb6c71617b48a58d96b52de38b23c3b7.bindPopup(popup_b3751ff033569de7219c4bb37decb5f1)
+        ;
+
+        
+    
+    
+            marker_fb6c71617b48a58d96b52de38b23c3b7.bindTooltip(
+                `<div>
+                     6. Mapalagama Manage Nishantha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f6a64e1a3031961266224648665620b = L.marker(
+                [6.185068874000024, 80.11557013400005],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_6415b95f4ac0286550a4cd723ac9aee9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b28a6def7bf303fe068060cb35f83390 = $(`<div id="html_b28a6def7bf303fe068060cb35f83390" style="width: 100.0%; height: 100.0%;">     <b>7. WT Rathnasiri</b><br>     <a href="https://www.google.com/maps?q=6.185068874000024,80.11557013400005" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_6415b95f4ac0286550a4cd723ac9aee9.setContent(html_b28a6def7bf303fe068060cb35f83390);
+            
+        
+
+        marker_3f6a64e1a3031961266224648665620b.bindPopup(popup_6415b95f4ac0286550a4cd723ac9aee9)
+        ;
+
+        
+    
+    
+            marker_3f6a64e1a3031961266224648665620b.bindTooltip(
+                `<div>
+                     7. WT Rathnasiri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40f9bd6b0dc3b407915ebea6d74a259a = L.marker(
+                [6.246787533000031, 80.11488905100003],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_bec44458e508db46ebb0e67ab994a920 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12f239f314b7c05e6e2bc73c686c270e = $(`<div id="html_12f239f314b7c05e6e2bc73c686c270e" style="width: 100.0%; height: 100.0%;">     <b>8. Wedige Meril Jayanath</b><br>     <a href="https://www.google.com/maps?q=6.246787533000031,80.11488905100003" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_bec44458e508db46ebb0e67ab994a920.setContent(html_12f239f314b7c05e6e2bc73c686c270e);
+            
+        
+
+        marker_40f9bd6b0dc3b407915ebea6d74a259a.bindPopup(popup_bec44458e508db46ebb0e67ab994a920)
+        ;
+
+        
+    
+    
+            marker_40f9bd6b0dc3b407915ebea6d74a259a.bindTooltip(
+                `<div>
+                     8. Wedige Meril Jayanath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bdbb1595075537a607384364cca93fb = L.marker(
+                [6.190140670000062, 80.09670782500007],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_b8b799b3c353a3ba297b489f206a6b7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0729a4789c31a7b56343149517efb3c3 = $(`<div id="html_0729a4789c31a7b56343149517efb3c3" style="width: 100.0%; height: 100.0%;">     <b>9. L.H. Rathnasiri De Silva</b><br>     <a href="https://www.google.com/maps?q=6.190140670000062,80.09670782500007" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_b8b799b3c353a3ba297b489f206a6b7e.setContent(html_0729a4789c31a7b56343149517efb3c3);
+            
+        
+
+        marker_8bdbb1595075537a607384364cca93fb.bindPopup(popup_b8b799b3c353a3ba297b489f206a6b7e)
+        ;
+
+        
+    
+    
+            marker_8bdbb1595075537a607384364cca93fb.bindTooltip(
+                `<div>
+                     9. L.H. Rathnasiri De Silva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c946f68fd324f138c7b99d35010e911a = L.marker(
+                [6.335456256000043, 80.03045246600004],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_7bede9c53f8056fb578980b49d103156 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af25f8a0481ce5db848480bf81353f98 = $(`<div id="html_af25f8a0481ce5db848480bf81353f98" style="width: 100.0%; height: 100.0%;">     <b>10. SDS Spices Pvt Ltd (Vindya)</b><br>     <a href="https://www.google.com/maps?q=6.335456256000043,80.03045246600004" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_7bede9c53f8056fb578980b49d103156.setContent(html_af25f8a0481ce5db848480bf81353f98);
+            
+        
+
+        marker_c946f68fd324f138c7b99d35010e911a.bindPopup(popup_7bede9c53f8056fb578980b49d103156)
+        ;
+
+        
+    
+    
+            marker_c946f68fd324f138c7b99d35010e911a.bindTooltip(
+                `<div>
+                     10. SDS Spices Pvt Ltd (Vindya)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79a72851b63ed4456662e2e42c44710e = L.marker(
+                [6.073935462000065, 80.20815115400006],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_3d891c6121c1c89c872bca55df1615cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac0987026d5c918c2d22367969742cc1 = $(`<div id="html_ac0987026d5c918c2d22367969742cc1" style="width: 100.0%; height: 100.0%;">     <b>11. Chawits Tropical Fruits (Pvt) Ltd</b><br>     <a href="https://www.google.com/maps?q=6.073935462000065,80.20815115400006" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_3d891c6121c1c89c872bca55df1615cb.setContent(html_ac0987026d5c918c2d22367969742cc1);
+            
+        
+
+        marker_79a72851b63ed4456662e2e42c44710e.bindPopup(popup_3d891c6121c1c89c872bca55df1615cb)
+        ;
+
+        
+    
+    
+            marker_79a72851b63ed4456662e2e42c44710e.bindTooltip(
+                `<div>
+                     11. Chawits Tropical Fruits (Pvt) Ltd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08a11b949711560f12fc5095610c8f78 = L.marker(
+                [6.2456207680000375, 80.06286101700005],
+                {}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+        
+    
+        var popup_d75e9254fbe6072c382e2816ee0c3655 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76dae30122563ee57282fbb34311b09f = $(`<div id="html_76dae30122563ee57282fbb34311b09f" style="width: 100.0%; height: 100.0%;">     <b>12. Kaumadee Bee Industry</b><br>     <a href="https://www.google.com/maps?q=6.2456207680000375,80.06286101700005" target="_blank">         <button style="background-color: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer;">             Directions         </button>     </a>     </div>`)[0];
+                popup_d75e9254fbe6072c382e2816ee0c3655.setContent(html_76dae30122563ee57282fbb34311b09f);
+            
+        
+
+        marker_08a11b949711560f12fc5095610c8f78.bindPopup(popup_d75e9254fbe6072c382e2816ee0c3655)
+        ;
+
+        
+    
+    
+            marker_08a11b949711560f12fc5095610c8f78.bindTooltip(
+                `<div>
+                     12. Kaumadee Bee Industry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_d30c86b71563592101bbd42bee931763_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_79ca0dea75e315820c10a73abad9d58b,
+                    "ESRI Satellite" : tile_layer_7030293424c0f758939c649c3eef067c,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_d30c86b71563592101bbd42bee931763 = L.control.layers(
+                layer_control_d30c86b71563592101bbd42bee931763_layers.base_layers,
+                layer_control_d30c86b71563592101bbd42bee931763_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_70725aadc6d8b70d5357a11db2f9d87d);
+
+        
+</script>
+</html>
